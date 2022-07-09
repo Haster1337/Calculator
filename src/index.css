@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+} 
+
+body {
+  background-color: lightgray;
+}
+
+.App {
+  display: grid;
+  grid-template-areas: "result result result result" "clear clear devide multiply"  "seven eight nine minus"  "four five six plus" "one two three equals"  "zero zero decimal equals";
+  width: 310px;
+  height: 340px;
+  border: 4px solid gray;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  text-align: end;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  margin-top: calc(50% - 470px);
+}
+
+.btn {
+  background-color: dimgray;
+  color: white;
+  font-size: 18px; 
+}
+
+#one {
+  grid-area: one;
+}
+#two{
+  grid-area: two;
+}
+#three{
+  grid-area: three;
+}
+#four{
+  grid-area: four;
+}
+#five{
+  grid-area: five;
+}
+#six{
+  grid-area: six;
+}
+#seven{
+  grid-area: seven;
+}
+#eight{
+  grid-area: eight;
+}
+#nine{
+  grid-area: nine;
+}
+#zero{
+  grid-area: zero;
+}
+#decimal{
+  grid-area: decimal
+}
+#plus {
+  grid-area: plus;
+  background-color: gray;
+}
+#minus{
+  grid-area: minus;
+  background-color: gray;
+}
+#multiply{
+  grid-area: multiply;
+  background-color: gray;
+}
+#devide {
+  grid-area: devide;
+  background-color: gray;
+}
+#text {
+  grid-area: result;
+  font-size: 22px;
+}
+
+#clear {
+  grid-area: clear;
+  background-color: darkred;
+}
+#equals {
+  grid-area: equals;
+  background-color: darkblue;
+}
